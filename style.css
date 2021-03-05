@@ -1,0 +1,313 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #fafafa;
+}
+
+header {
+	display: flex;
+	padding: 0px 60px;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 93.7%;
+}
+
+header img {
+	width: 170px;
+	padding: 5px 0;
+}
+
+.container {
+	padding: 0 200px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.logo-scroll {
+	display: none;
+	width: 170px;
+}
+
+.scrolled {
+	background-color: white;
+	box-shadow: 2px 3px 5px silver;
+	transition: background-color 0.5s;
+}
+
+.scrolled a {
+	color: dodgerblue;
+}
+
+.scrolled .logo-unScroll {
+	display: none;
+}
+
+.scrolled .logo-scroll {
+	display: block;
+}
+
+.unScroll {
+	transition: background-color 0.5s;
+}
+
+.ul {
+	display: flex;
+	list-style: none;
+	gap: 100px;
+	font-size: 1.7em;
+	color: white;
+	font-weight: 600;
+}
+
+header a:hover {
+	opacity: 0.8;
+}
+
+.atas {
+	background-color: dodgerblue;
+	min-height: 90vh;
+	padding-top: 120px;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	padding: 0 120px;
+	min-height: 80vh;
+	color: white;
+}
+
+.logo img {
+	width: 450px;
+	margin-left: 200px;
+}
+
+.motto {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+/*Artikel dan about punya alfan*/
+
+/*.artikel {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	display: grid;
+	gap: 20px;
+	padding: 0 60px; 
+	
+}
+
+.artikel h1 {
+	text-transform: uppercase;
+	text-align: center;
+}*/
+
+
+.about-blog {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	display: grid;
+	gap: 20px;
+	padding: 0 60px; 
+	
+}
+
+.about-blog h1 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*PUNYA ALFAN LIST BLOG*/
+
+/*.service {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 25px;
+	margin: 60px 0 0 0;
+}
+
+.services {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 1.5px silver;
+}
+
+.services:hover {
+	box-shadow: 3px 5px 10px silver;
+	transition: box-shadow 0.5s;
+}
+
+.services p {
+	padding: 10px 0;
+}
+
+.icon {
+	font-size: 100px;
+}*/
+
+
+
+
+/*/////////////////
+////VERSI RIO////
+/////////////////*/
+
+
+
+
+.artikel {
+	min-height: 90vh;
+	padding: 120px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.artikel h1 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-image img {
+	border-radius: 10px;
+}
+
+.about {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	align-items: center;
+	width: 80%;
+	min-height: 40vh;
+	color: #1E90FF;
+	font-size: 25px;
+}
+
+.about-1 {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	margin: 80px 0;
+	font-size: 25px;
+	color: #1E90FF;
+	align-items: center;
+	text-align: right;
+	float: right;
+	width: 80%;
+}
+
+.about-1 img {
+	margin: 0 0 0 auto;
+}
+
+.service {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+	gap: 25px;
+	margin: 60px 0 100px 0;
+}
+
+.services {
+	padding: 20px;
+	border-radius: 5px;
+	text-align: left;
+	width: 80%;
+}
+
+.services h3 {
+	padding: 10px 0;
+}
+
+.services img {
+	width: 100%;
+}
+
+.services a {
+	color: black;
+}
+
+footer {
+	background-color: /*rgb(9,8,13)*/ dodgerblue;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.footer-icon {
+	display: grid;
+	grid-template-columns: max-content;
+	grid-template-rows: 50px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+footer p {
+	margin-top: 15px;
+	padding-top: 10px;
+	font-size: 13px;
+	border-top: 1px solid #ddd;
+}
+
+.footer-icon-img i {
+	margin: 0 11px;
+}
+
+
+.footer-icon-img i:hover {
+	color: #1A9AD3;
+	transition: 0.3s;
+}
+
+
+/*/////////////////
+////PENUTUP-VERSI-RIO////
+/////////////////*/
+
+
+
+
+@media (max-width: 580px) {
+	nav {
+		display: none;
+	}
+
+	.container {
+		padding: 0 10px;
+	}
+
+	header {
+		display: grid;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.content {
+		grid-template-columns: 1fr;
+		background-image: url("../img/7.png") no-repeat;
+		background-size: 80%;
+	}
+
+	.motto {
+		font-size: 1.3em;
+	}
+
+	.logo img {
+		display: none;
+	}
+}
