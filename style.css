@@ -209,7 +209,7 @@ header a:hover {
 }
 
 .about-1 img {
-	margin: 0 0 0 auto;
+	margin: auto;
 }
 
 .service {
@@ -268,7 +268,7 @@ footer p {
 
 
 .footer-icon-img i:hover {
-	color: #1A9AD3;
+	color: blue;
 	transition: 0.3s;
 }
 
@@ -278,9 +278,11 @@ footer p {
 /////////////////*/
 
 
+@media all and (max-width: 670px) {
 
+}
 
-@media (max-width: 580px) {
+@media all and (max-width: 580px) {
 	nav {
 		display: none;
 	}
@@ -310,4 +312,66 @@ footer p {
 	.logo img {
 		display: none;
 	}
+	
+	.artikel {
+		min-height: 70vh;
+		padding: 80px 10px;
+	}
+
+	.about-image {
+	}
+
+	.about img {
+		width: 100%;
+	}
+
+	.about p {
+		font-size: 13px;
+		margin-left: 20px;
+		width: 100%;
+		text-align: left;
+	}
+
+	.about-1 {
+		margin: 0;
+	}
+
+	.about-1 img {
+		width: 90%;
+	}
+
+	.about-1 p {
+		font-size: 13px;
+		width: 100%;
+		margin-left: -20px;
+		text-align: right;
+	}
+
+	.about-blog h1 {
+		text-transform: uppercase;
+		text-align: center;
+		width: 70%;
+	}
+
+	.about-blog {
+	margin-top: 50px;
+	margin-bottom: auto;
+	display: grid;
+	gap: 20px;
+	padding: 0 60px; 
+	}
+
+	.services h3 {
+		font-size: 13px;
+	}
+
+	.services p {
+		font-size: 9px;
+	}
+
+
+	.r-none {
+		display: none;
+	}
+
 }
